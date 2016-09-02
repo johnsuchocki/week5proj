@@ -1,0 +1,64 @@
+package com.menuDB;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+public class DAO {
+	public static final String JBDC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/?user=root&autoReconnect=true&useSSL=false";
+	static final String USER = "root";
+	static final String PASSWORD = "root";
+
+	static Connection CONN = null;
+	static Statement STMT = null;
+	static PreparedStatement PREP_STMT = null;
+	static ResultSet RES_SET = null;
+	
+	public static void connToDB() {
+		try {
+			Class.forName(JBDC_DRIVER);
+
+			System.out.println("Connecting to the database");			
+			CONN = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+			System.out.println("Connected to the database");
+			System.out.println("");
+		} catch (SQLException | ClassNotFoundException e) {
+			System.out.println("Database connection failed.");
+			e.printStackTrace();
+		}
+	}// connect method
+	
+	public static ArrayList<MenuItem> readFromDB() {
+		ArrayList<MenuItem> allItems = new ArrayList<>();
+
+		connToDB();
+
+		try {
+			STMT = CONN.createStatement();
+			RES_SET = STMT.executeQuery("SELECT * FROM menu.menu_options;");
+
+			while (RES_SET.next()) {
+				MenuItem items = new MenuItem();
+
+				items.setMenuID(RES_SET.getString("menu_id"));
+				(RES_SET.getString("username"));
+				(RES_SET.getString("realname"));
+				(RES_SET.getString("email"));
+				(RES_SET.getString("age"));
+
+				.add();
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return ;
+	}// read method
+	
+}

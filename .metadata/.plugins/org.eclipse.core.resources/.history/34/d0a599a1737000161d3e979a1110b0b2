@@ -1,0 +1,12 @@
+package com.menuDB;
+
+public class MenuItem {
+	
+	private static String menuID = null;
+	private static String foodName = null;
+	private static String cost = null;
+	private static String timeServed = null;
+	private static String healthyMenu = null;
+	
+	
+}

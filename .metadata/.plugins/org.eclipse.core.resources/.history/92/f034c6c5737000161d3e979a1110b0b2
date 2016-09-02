@@ -1,0 +1,55 @@
+package com.menuDB;
+
+public class MenuItem {
+
+	private static String menuID = null;
+	private static String foodName = null;
+	private static String cost = null;
+	private static String timeServed = null;
+	private static String healthyMenu = null;
+
+	public MenuItem() {
+		super();
+	}
+
+	public static String getMenuID() {
+		return menuID;
+	}
+
+	public static void setMenuID(String menuID) {
+		MenuItem.menuID = menuID;
+	}
+
+	public static String getFoodName() {
+		return foodName;
+	}
+
+	public static void setFoodName(String foodName) {
+		MenuItem.foodName = foodName;
+	}
+
+	public static String getCost() {
+		return cost;
+	}
+
+	public static void setCost(String cost) {
+		MenuItem.cost = cost;
+	}
+
+	public static String getTimeServed() {
+		return timeServed;
+	}
+
+	public static void setTimeServed(String timeServed) {
+		MenuItem.timeServed = timeServed;
+	}
+
+	public static String getHealthyMenu() {
+		return healthyMenu;
+	}
+
+	public static void setHealthyMenu(String healthyMenu) {
+		MenuItem.healthyMenu = healthyMenu;
+	}
+
+}
