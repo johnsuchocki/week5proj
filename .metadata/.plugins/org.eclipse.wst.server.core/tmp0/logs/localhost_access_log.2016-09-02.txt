@@ -130,3 +130,12 @@
 0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:16:20 -0400] "POST /menuDB/AddToDBServ HTTP/1.1" 200 12407
 0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:16:28 -0400] "GET /menuDB/index.jsp HTTP/1.1" 200 12407
 0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:16:32 -0400] "GET /menuDB/index.jsp HTTP/1.1" 200 12407
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:35:06 -0400] "GET /menuDB/index.jsp HTTP/1.1" 200 12407
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:35:11 -0400] "GET /menuDB/index.jsp HTTP/1.1" 200 12407
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:51:18 -0400] "GET /menuDB/index.jsp HTTP/1.1" 200 12685
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:51:19 -0400] "GET /menuDB/main.css HTTP/1.1" 200 67
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:51:19 -0400] "GET /menuDB/file_edit.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:51:19 -0400] "GET /menuDB/file_delete.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:53:20 -0400] "POST /menuDB/FindItemInDBServ HTTP/1.1" 200 2598
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:53:20 -0400] "GET /menuDB/main.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:53:29 -0400] "POST /menuDB/UpdateInDBServ HTTP/1.1" 200 12685

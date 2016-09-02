@@ -10,9 +10,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Cinzel"
-	rel="stylesheet">
-<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 
 <meta http-equiv="Content-Type"
 	content="text/html; charset=ISO-8859-1, width=device-width, initial-scale=1">
@@ -58,8 +56,8 @@
 								<%
 									allItems = DAO2.readFromDB();
 									for (int i = 0; i < allItems.size(); i++) {
-										currentItem = allItems.get(i);
-										menuID = currentItem.getMenuID();
+									currentItem = allItems.get(i);
+									menuID = currentItem.getMenuID();
 								%>
 								<tr>
 									<td id="id<%out.print(menuID);%>">
@@ -89,8 +87,7 @@
 									</td>
 									<td><form name="edit" action="FindItemInDBServ"
 											method="post">
-											<button name="edit" type="submit"
-												value="<%out.print(menuID);%>">
+											<button name="edit" type="submit" value="<%out.print(menuID);%>">
 												<img src="file_edit.png" width="17" height="17"
 													class="img-responsive">
 											</button>
